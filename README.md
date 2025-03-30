@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Color Scheme Generator
+
+A modern, responsive web application that generates harmonious color palettes based on color theory. Built with Next.js App Router, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 **Multiple Harmony Types** - Generate color schemes using different harmony rules:
+  - Analogous
+  - Monochromatic
+  - Triadic
+  - Complementary
+  - Split-Complementary
+
+- 🔄 **Customizable** - Adjust the number of colors in your palette (2-9 colors)
+
+- 📋 **Easy Export** - Copy colors to clipboard in different formats:
+  - Individual colors
+  - Comma-separated list
+  - CSS variables
+
+- 🌓 **Dark Mode Support** - Automatic detection of system color scheme preference
+
+- 📱 **Fully Responsive** - Works great on desktop, tablet, and mobile devices
+
+- ⚡ **Built with Modern Technologies**:
+  - Next.js 14 (App Router)
+  - TypeScript
+  - Tailwind CSS
+  - Framer Motion for smooth animations
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.17.0 or later
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/color-scheme-generator.git
+cd color-scheme-generator
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+/
+├── app/                    # Next.js App Router files
+│   ├── page.tsx            # Main page component
+│   ├── layout.tsx          # Root layout
+│   └── globals.css         # Global styles
+├── components/             # React components
+│   ├── ColorPalette.tsx    # Color palette display
+│   ├── ColorSchemeControls.tsx # Controls for adjusting the color scheme
+│   ├── InfoSection.tsx     # Information about HarmonyHue
+│   └── ThemeToggle.tsx     # Dark/light mode toggle
+├── hooks/                  # Custom React hooks
+│   └── useColorScheme.ts   # Hook for color scheme generation
+├── utils/                  # Utility functions
+│   └── colorUtils.ts       # Color conversion and manipulation functions
+├── public/                 # Static files
+└── README.md               # Project documentation
+```
+
+## Deployment
+
+This project can be deployed as a static site using Next.js's static export feature.
+
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
+
+The output will be in the `out` directory, which can be deployed to any static hosting service.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Tailwind CSS](https://tailwindcss.com/docs) - Utility-first CSS framework.
+- [Framer Motion](https://www.framer.com/motion/) - Animation library for React.
+- [Color Theory](https://www.canva.com/colors/color-wheel/) - Learn about HarmonyHue.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the LICENSE file for details.
