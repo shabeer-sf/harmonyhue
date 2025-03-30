@@ -18,7 +18,7 @@ export default function Footer() {
               transition={{ duration: 0.5 }}
               className="text-xl font-bold mb-4"
             >
-              Palette Pro
+              HarmonyHue
             </motion.h3>
             <p className="text-indigo-100 mb-4 max-w-md">
               Create stunning color palettes for your next design project. Use our advanced color theory algorithms to generate harmonious color combinations.
@@ -54,7 +54,7 @@ export default function Footer() {
         
         <div className="border-t border-indigo-400 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-indigo-100">
-            © {currentYear} Palette Pro. All rights reserved.
+            © {currentYear} HarmonyHue. All rights reserved.
           </p>
           <p className="text-sm text-indigo-100 mt-4 md:mt-0">
             Made with ❤️ for designers and developers
